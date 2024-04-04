@@ -20,6 +20,7 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
+
     @PostMapping("/get")
     public ResponseEntity getWeatherInfo(@RequestBody GetWheather getWheather) {
         try {
