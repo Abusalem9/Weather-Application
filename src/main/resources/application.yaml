@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Weather Application
+  datasource:
+    url: jdbc:postgresql://localhost:5432/weather?currentSchema=weather
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+open:
+  weather:
+    url: http://api.openweathermap.org
+    api-key: e7551b796fe4250bccd9bef5877e5220
+
